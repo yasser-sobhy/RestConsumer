@@ -1,5 +1,5 @@
 # RestConsumer
-RestConsumer makes it very easy to write RESTful api consumers and to communicate with RESTful api servcies, see [QtSendGrid](https://github.com/yasser-sobhy/QtSendGrid/blob/master/src/sendgridclient.h) to see how to use it to consume write a web service.
+RestConsumer makes it very easy to write RESTful api consumers and to communicate with RESTful api servcies, see [QtSendGrid](https://github.com/yasser-sobhy/QtSendGrid/blob/master/src/sendgridclient.h) to see how to use it to consume write a web service. RestConsumer is a part of [Gurra](https://github.com/yasser-sobhy/Gurra) ui framework.
 
 ## Example
 You just need to inherit RestConsumer to get a GET, PUT, POST, DELETE operations for your client
@@ -31,5 +31,3 @@ You just need to inherit RestConsumer to get a GET, PUT, POST, DELETE operations
 
     }
     #endif // SENDGRIDCLIENT_H
-
-RestConsumer is a part of [Gurra](https://github.com/yasser-sobhy/Gurra) ui framework.
