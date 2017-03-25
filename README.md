@@ -4,32 +4,32 @@ RestConsumer makes it very easy to write RESTful api consumers and to communicat
 ## Example
 You just need to inherit RestConsumer to get a GET, PUT, POST, DELETE operations for your client
 
-  #ifndef SENDGRIDCLIENT_H
-  #define SENDGRIDCLIENT_H
+    #ifndef SENDGRIDCLIENT_H
+    #define SENDGRIDCLIENT_H
 
-  #include "sendgrid/restconsumer.h"
-  #include "sendgrid/sendgridmessage.h"
+    #include "sendgrid/restconsumer.h"
+    #include "sendgrid/sendgridmessage.h"
 
-  #include <QString>
+    #include <QString>
 
-  namespace SendGrid {
+    namespace SendGrid {
 
-  class SendGridClient : public Gurra::RestConsumer
-  {
+    class SendGridClient : public Gurra::RestConsumer
+    {
 
-  public:
-      SendGridClient();
-      SendGridClient(QByteArray apiKey, QByteArray host = "https://api.sendgrid.com/v3", QHash<QByteArray, QByteArray>  requestHeaders = {}, QString urlPath = {});
+      public:
+          SendGridClient();
+          SendGridClient(QByteArray apiKey, QByteArray host = "https://api.sendgrid.com/v3", QHash<QByteArray, QByteArray>  requestHeaders = {}, QString urlPath = {});
 
-      void sendEmail(SendGridMessage &msg);
+          void sendEmail(SendGridMessage &msg);
 
-  private:
-      QByteArray version = "1.0";
-      QString urlPath;
-      QString mediaType;
-  };
+      private:
+          QByteArray version = "1.0";
+          QString urlPath;
+          QString mediaType;
+    };
 
-  }
-  #endif // SENDGRIDCLIENT_H
+    }
+    #endif // SENDGRIDCLIENT_H
 
 RestConsumer is a part of [Gurra](https://github.com/yasser-sobhy/Gurra) ui framework.
